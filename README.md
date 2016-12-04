@@ -1,3 +1,3 @@
 # own-scripts
-A set of different scripts. Find description in each particular script.
+A set of different scripts. Find description in body of each script.
 
