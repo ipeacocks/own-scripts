@@ -1,6 +1,6 @@
 """
 This script uses Elasticsearch API for cleaning big indices.
-He finds all indecies and removes biggest one (bigger than normal_size value)
+It finds all existing indices and removes biggest one (bigger than normal_size value)
 if disk space is used for more than 85%. Free disk space is counted by df
 bash command.
 """
