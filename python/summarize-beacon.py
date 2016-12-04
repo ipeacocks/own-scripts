@@ -16,7 +16,7 @@ output to standard out in comma-delimited format.
 A,1
 F,2
 
-When given optional --from and --to arguments, the script output
+When given optional --from and --to arguments, the script outputs
 the character count over a span of beacon values using relative time.
 For example, if we provided the script the following arguments:
 
