@@ -62,9 +62,8 @@ def main():
             print max_size_index, dic_indices[max_size_index]
             print disk_space_percent
             '''
-
+            
         del dic_indices[max_size_index]
-
 
 if __name__ == "__main__":
     main()
