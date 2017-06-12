@@ -10,7 +10,7 @@ function get_rtrn(){
 function usage(){
     read -r -d '' USAGE << EOM
 Usage: bash $0 --group 'group_name' --zookeeper 'zookeeper_nodes' --warning numeric --critical numeric -g OID
-       bash $0 --group 'lighthouse-rules-engine' --zookeeper '1.2.3.4:2181, 5.6.7.8:2181, 9.10.11.12:2181/events' --warning 5000 --critical 10000 -g .1.2.3.4.5.6.7
+       bash $0 --group 'some-rules-engine' --zookeeper '1.2.3.4:2181, 5.6.7.8:2181, 9.10.11.12:2181/events' --warning 5000 --critical 10000 -g .1.2.3.4.5.6.7
 EOM
     echo "$USAGE"
 }
