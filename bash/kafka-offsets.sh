@@ -1,6 +1,7 @@
 #!/bin/bash
 
-# This script is used for Nagios monitoring of Kafka queues
+# This script is for Nagios monitoring of Kafka queues via SNMP.
+# It's good example how to write script with named arguments
 
 # for multiple results
 function get_rtrn(){
