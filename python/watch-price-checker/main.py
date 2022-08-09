@@ -24,8 +24,8 @@ class CheckPrice:
     def get_html(self):
         # Getting rendered html page
         # s = Service(GeckoDriverManager().install())
-        # driver = webdriver.Firefox(service=s)
-        driver = webdriver.Firefox(executable_path='/usr/bin/geckodriver')
+        s = Service('/usr/bin/geckodriver')
+        driver = webdriver.Firefox(service=s)
         driver.get(self.url)
         time.sleep(1)
         html_source = driver.page_source
