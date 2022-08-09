@@ -1,4 +1,4 @@
-FROM ubuntu:22.04
+FROM ubuntu:20.04
 ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /app
@@ -7,7 +7,7 @@ COPY . .
 
 RUN apt-get update && \
     apt-get install --no-install-recommends -y \
-        software-properties-common \
+        firefox \
         gpg-agent \
         xvfb \
         build-essential \
@@ -17,9 +17,9 @@ RUN apt-get update && \
         python3-pip && \
     rm -rf /var/lib/apt/lists/*
 
-RUN add-apt-repository -y ppa:mozillateam/firefox-next && \
-    apt install -y firefox=104.0~b7+build1-0ubuntu0.22.04.1 && \
-    rm -rf /var/lib/apt/lists/*
+# RUN add-apt-repository -y ppa:mozillateam/firefox-next && \
+#     apt install -y firefox=104.0~b7+build1-0ubuntu0.22.04.1 && \
+#     rm -rf /var/lib/apt/lists/*
 
 RUN pip install --no-cache-dir -r requirements.txt
 
